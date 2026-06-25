@@ -33,13 +33,13 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Overview</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft ("we", "our", or "the Service") is a browser-based screen recording tool. This privacy policy explains how ScreenCraft handles data. The short version: we don't collect, transmit, store, or process your recordings or personal data. This is not a policy statement we've written for legal compliance and then ignored — it is an architectural truth. Our application has no server endpoints that accept video or audio data, and we have no database where such data could be stored.
+              RecordPilot ("we", "our", or "the Service") is a browser-based screen recording tool. This privacy policy explains how RecordPilot handles data. The short version: we don't collect, transmit, store, or process your recordings or personal data. This is not a policy statement we've written for legal compliance and then ignored — it is an architectural truth. Our application has no server endpoints that accept video or audio data, and we have no database where such data could be stored.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">2. Data We Do Not Collect</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">ScreenCraft does not collect:</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">RecordPilot does not collect:</p>
             <ul className="space-y-2 text-muted-foreground text-sm">
               {[
                 'Screen recordings, video files, or audio recordings',
@@ -62,14 +62,14 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">3. How Browser Recording Works</h2>
             <p className="text-muted-foreground leading-relaxed">
-              When you use ScreenCraft, your browser requests access to your screen, microphone, or webcam using standard browser APIs (getDisplayMedia, getUserMedia). The browser uses these streams to create a MediaRecorder instance, which encodes the video data to a WebM blob stored temporarily in your browser's memory. This blob is never transmitted over any network connection. When you click Download, the blob is written directly to your local file system via the browser's native file download mechanism.
+              When you use RecordPilot, your browser requests access to your screen, microphone, or webcam using standard browser APIs (getDisplayMedia, getUserMedia). The browser uses these streams to create a MediaRecorder instance, which encodes the video data to a WebM blob stored temporarily in your browser's memory. This blob is never transmitted over any network connection. When you click Download, the blob is written directly to your local file system via the browser's native file download mechanism.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. Technical Architecture</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft is a static web application served over HTTPS. It has no application server, no database, no cloud storage, and no API endpoints that handle media data. The application code runs entirely in your browser. Any server infrastructure exists only to serve the static HTML, CSS, and JavaScript files of the application itself — equivalent to downloading a file.
+              RecordPilot is a static web application served over HTTPS. It has no application server, no database, no cloud storage, and no API endpoints that handle media data. The application code runs entirely in your browser. Any server infrastructure exists only to serve the static HTML, CSS, and JavaScript files of the application itself — equivalent to downloading a file.
             </p>
           </section>
 
@@ -83,35 +83,35 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">6. Third-Party Services</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft may use the following minimal third-party services: a CDN (Content Delivery Network) to serve application files; Google Fonts for typography. Neither service receives your recording data. CDN and font services receive only standard HTTP requests for application assets — the same requests made by any website visitor.
+              RecordPilot may use the following minimal third-party services: a CDN (Content Delivery Network) to serve application files; Google Fonts for typography. Neither service receives your recording data. CDN and font services receive only standard HTTP requests for application assets — the same requests made by any website visitor.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">7. GDPR Compliance</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft is designed to be GDPR-compliant by default because we do not process personal data. There is no lawful basis to establish for personal data processing because personal data is not processed. EU residents have no data to access, correct, or delete because we hold no data about them.
+              RecordPilot is designed to be GDPR-compliant by default because we do not process personal data. There is no lawful basis to establish for personal data processing because personal data is not processed. EU residents have no data to access, correct, or delete because we hold no data about them.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">8. CCPA Compliance</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft does not sell personal information. We do not collect personal information as defined by the California Consumer Privacy Act. California residents have no data subject rights to exercise regarding ScreenCraft because no personal information is collected.
+              RecordPilot does not sell personal information. We do not collect personal information as defined by the California Consumer Privacy Act. California residents have no data subject rights to exercise regarding RecordPilot because no personal information is collected.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">9. Children's Privacy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft does not knowingly collect personal information from children under 13 (or under 16 in the EU). Because we collect no personal information from any user, this requirement is satisfied by design.
+              RecordPilot does not knowingly collect personal information from children under 13 (or under 16 in the EU). Because we collect no personal information from any user, this requirement is satisfied by design.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">10. Changes to This Policy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We may update this privacy policy to reflect changes in our practices or applicable law. Changes will be posted on this page with an updated date. Continued use of ScreenCraft after changes constitutes acceptance of the revised policy.
+              We may update this privacy policy to reflect changes in our practices or applicable law. Changes will be posted on this page with an updated date. Continued use of RecordPilot after changes constitutes acceptance of the revised policy.
             </p>
           </section>
 

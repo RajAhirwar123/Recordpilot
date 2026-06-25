@@ -156,7 +156,7 @@ export function useRecording() {
     }
   }, [stopAllStreams]);
 
-  const downloadRecording = useCallback((filename = 'screencraft-recording') => {
+  const downloadRecording = useCallback((filename = 'RecordPilot-recording') => {
     if (!blob || !videoUrl) return;
     const ext = blob.type.includes('mp4') ? 'mp4' : blob.type.includes('audio') ? 'webm' : 'webm';
     const a = document.createElement('a');

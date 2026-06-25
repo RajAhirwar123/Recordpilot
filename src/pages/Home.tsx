@@ -34,16 +34,16 @@ const steps = [
 ];
 
 const faqs = [
-  { q: 'Is my recording uploaded to your servers?', a: 'No. ScreenCraft is 100% client-side. Your recording is processed entirely in your browser and never transmitted to any server. We have no servers that handle video — it\'s architecturally impossible for us to receive your recordings.' },
+  { q: 'Is my recording uploaded to your servers?', a: 'No. RecordPilot is 100% client-side. Your recording is processed entirely in your browser and never transmitted to any server. We have no servers that handle video — it\'s architecturally impossible for us to receive your recordings.' },
   { q: 'Do you store or save my videos?', a: 'We do not store anything. All data exists temporarily in your browser\'s memory and is cleared when you close the tab or click discard. We have no database, no cloud storage, and no persistent storage of any kind.' },
-  { q: 'How does browser-based recording work?', a: 'Modern browsers expose APIs like getDisplayMedia and MediaRecorder that allow JavaScript to capture screen content and encode it to video — entirely client-side. ScreenCraft uses these standard browser APIs to give you a professional recording experience without any server.' },
+  { q: 'How does browser-based recording work?', a: 'Modern browsers expose APIs like getDisplayMedia and MediaRecorder that allow JavaScript to capture screen content and encode it to video — entirely client-side. RecordPilot uses these standard browser APIs to give you a professional recording experience without any server.' },
   { q: 'Can I record system audio (computer sounds)?', a: 'Yes. When capturing your screen using Chrome or Edge on desktop, you can check "Share system audio" in the browser permission dialog. This captures all computer sounds including music, video audio, and notification sounds.' },
   { q: 'Can I record my webcam and screen together?', a: 'Yes. Select the "Screen + Webcam" mode to capture both simultaneously. Your webcam feed is included as a separate video track in the recording.' },
-  { q: 'Is there a recording time limit?', a: 'No. ScreenCraft imposes no time limits on recordings. The only practical limit is your device\'s available RAM and the browser\'s memory ceiling. For very long recordings, we recommend downloading frequently.' },
-  { q: 'Does it work on Chrome and Firefox?', a: 'ScreenCraft works best on Chrome, Edge, and other Chromium-based browsers which have full support for all recording APIs. Firefox supports most features. Safari has limited screen capture support. We recommend Chrome for the best experience.' },
+  { q: 'Is there a recording time limit?', a: 'No. RecordPilot imposes no time limits on recordings. The only practical limit is your device\'s available RAM and the browser\'s memory ceiling. For very long recordings, we recommend downloading frequently.' },
+  { q: 'Does it work on Chrome and Firefox?', a: 'RecordPilot works best on Chrome, Edge, and other Chromium-based browsers which have full support for all recording APIs. Firefox supports most features. Safari has limited screen capture support. We recommend Chrome for the best experience.' },
   { q: 'Can I trim videos after recording?', a: 'Yes. After stopping a recording, the built-in video trimmer appears. Use the dual-range slider to set your start and end points, preview the segment, then export the trimmed version — all without leaving your browser.' },
   { q: 'Can I trim audio recordings?', a: 'Yes. The Audio Recorder page includes a dedicated audio trimmer with a visual timeline. Set trim points, preview the segment, and download the trimmed audio file.' },
-  { q: 'Is ScreenCraft completely free?', a: 'Yes, completely free with no hidden charges, no premium tiers, no feature gates. Every feature is available to every user without payment or registration.' },
+  { q: 'Is RecordPilot completely free?', a: 'Yes, completely free with no hidden charges, no premium tiers, no feature gates. Every feature is available to every user without payment or registration.' },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -153,7 +153,7 @@ export default function Home() {
                   <div className="w-3 h-3 rounded-full bg-destructive" />
                   <div className="w-3 h-3 rounded-full bg-warning" />
                   <div className="w-3 h-3 rounded-full bg-success" />
-                  <span className="ml-3 text-xs text-muted-foreground font-mono">ScreenCraft — Recording Studio</span>
+                  <span className="ml-3 text-xs text-muted-foreground font-mono">Recordpilot — Recording Studio</span>
                   <div className="ml-auto flex items-center gap-2">
                     <div className="flex items-center gap-1.5 bg-destructive/20 border border-destructive/30 rounded-full px-3 py-1">
                       <span className="w-2 h-2 rounded-full bg-destructive animate-pulse" />
@@ -163,18 +163,33 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-5 space-y-4">
-                  <div className="bg-secondary/60 rounded-lg aspect-video flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-                    <div className="text-center">
-                      <Monitor className="w-16 h-16 text-primary/40 mx-auto mb-3" />
-                      <p className="text-muted-foreground text-sm">Screen capture preview</p>
-                    </div>
-                    <div className="absolute bottom-3 right-3 w-20 h-16 bg-secondary rounded-lg border border-border flex items-center justify-center">
-                      <div className="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
-                        <Video className="w-4 h-4 text-primary" />
+                  <div className="bg-secondary/60 rounded-lg aspect-video relative overflow-hidden">
+
+                      {/* Main Video */}
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src="" type="video/mp4" />
+                      </video>
+
+                      {/* Webcam Preview */}
+                      <div className="absolute bottom-3 right-3 w-24 h-16 rounded-lg overflow-hidden border border-border shadow-lg">
+                        <video
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover"
+                        >
+                          <source src="/video-project-5.mp4" type="video/mp4" />
+                        </video>
                       </div>
+
                     </div>
-                  </div>
                   <div className="grid grid-cols-3 gap-3">
                     {['Microphone', 'System Audio', 'Webcam'].map((label, i) => (
                       <div key={label} className="bg-secondary/40 rounded-lg p-3">
@@ -288,7 +303,7 @@ export default function Home() {
           <div className="mx-auto max-w-3xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-white">Frequently Asked Questions</h2>
-              <p className="mt-4 text-muted-foreground">Everything you need to know about ScreenCraft.</p>
+              <p className="mt-4 text-muted-foreground">Everything you need to know about RecordPilot.</p>
             </div>
             <div className="space-y-3">
               {faqs.map(({ q, a }) => (
@@ -307,7 +322,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-white mb-6">The Complete Guide to Free Online Screen Recording</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Whether you're a software developer documenting a bug, a teacher creating an online course, a gamer capturing a highlight reel, or a remote worker explaining a workflow, screen recording has become an essential skill in the modern digital era. <strong className="text-white">ScreenCraft is a free online screen recorder with no login required</strong> — a fully browser-based tool that eliminates the complexity, cost, and privacy concerns of traditional recording software.
+                Whether you're a software developer documenting a bug, a teacher creating an online course, a gamer capturing a highlight reel, or a remote worker explaining a workflow, screen recording has become an essential skill in the modern digital era. <strong className="text-white">RecordPilot is a free online screen recorder with no login required</strong> — a fully browser-based tool that eliminates the complexity, cost, and privacy concerns of traditional recording software.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">What Is a Browser-Based Screen Recorder?</h3>
               <p>
@@ -315,7 +330,7 @@ export default function Home() {
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Screen Recording for Education</h3>
               <p>
-                Teachers, professors, and instructional designers use screen recording to create tutorial videos, record lectures for asynchronous students, demonstrate software tools, and provide personalized feedback on student submissions. With ScreenCraft's free online screen recorder with audio, educators can capture narrated walkthroughs of complex concepts, record demonstrations of scientific simulations, and build entire course libraries — all without paying for expensive recording software or worrying about student data privacy since recordings never leave their device.
+                Teachers, professors, and instructional designers use screen recording to create tutorial videos, record lectures for asynchronous students, demonstrate software tools, and provide personalized feedback on student submissions. With RecordPilot's free online screen recorder with audio, educators can capture narrated walkthroughs of complex concepts, record demonstrations of scientific simulations, and build entire course libraries — all without paying for expensive recording software or worrying about student data privacy since recordings never leave their device.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Screen Recording for Business and Remote Work</h3>
               <p>
@@ -323,27 +338,27 @@ export default function Home() {
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Screen Recording for Content Creators and Gaming</h3>
               <p>
-                Content creators and gamers need reliable, high-quality recording tools. ScreenCraft supports HD recording at 1080p with microphone and system audio capture, making it suitable for gaming highlight clips, software reviews, coding livestream source footage, and YouTube tutorial content. The browser-based trimmer means creators can rough-cut their videos before importing into a dedicated editor, saving time and storage.
+                Content creators and gamers need reliable, high-quality recording tools. RecordPilot supports HD recording at 1080p with microphone and system audio capture, making it suitable for gaming highlight clips, software reviews, coding livestream source footage, and YouTube tutorial content. The browser-based trimmer means creators can rough-cut their videos before importing into a dedicated editor, saving time and storage.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Screen Recording for Customer Support and Software Demos</h3>
               <p>
-                Support teams use screen recording to create visual explanations for common issues, reducing ticket resolution time. Sales teams record personalized product demos for prospects. QA engineers capture bug reproductions. Project managers document requirements with annotated walkthroughs. ScreenCraft's no-login, no-upload approach means teams can record and share instantly without IT approval or data compliance concerns.
+                Support teams use screen recording to create visual explanations for common issues, reducing ticket resolution time. Sales teams record personalized product demos for prospects. QA engineers capture bug reproductions. Project managers document requirements with annotated walkthroughs. RecordPilot's no-login, no-upload approach means teams can record and share instantly without IT approval or data compliance concerns.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Privacy and Security: Why Browser Recording Is Safer</h3>
               <p>
-                Traditional cloud recording services upload your video to their servers — which means your screen content, including potentially sensitive documents, code, financial data, or personal information, is transmitted across the internet and stored on third-party infrastructure. ScreenCraft's architecture makes this impossible: the MediaRecorder API writes encoded video directly to browser memory, which is then made available as a local Blob object. The video is never serialized over a network connection. This makes ScreenCraft <strong className="text-white">the most private free screen recorder online</strong> — not just by policy, but by design.
+                Traditional cloud recording services upload your video to their servers — which means your screen content, including potentially sensitive documents, code, financial data, or personal information, is transmitted across the internet and stored on third-party infrastructure. RecordPilot's architecture makes this impossible: the MediaRecorder API writes encoded video directly to browser memory, which is then made available as a local Blob object. The video is never serialized over a network connection. This makes RecordPilot <strong className="text-white">the most private free screen recorder online</strong> — not just by policy, but by design.
               </p>
-              <h3 className="text-xl font-semibold text-white mt-8">Technical Comparison: ScreenCraft vs. Traditional Screen Recorders</h3>
+              <h3 className="text-xl font-semibold text-white mt-8">Technical Comparison: RecordPilot vs. Traditional Screen Recorders</h3>
               <p>
-                OBS Studio is the gold standard for professional streaming and recording, but requires installation, a learning curve, and system resources. Loom offers polished cloud recording but uploads your videos to their servers and charges for advanced features. ScreenCraft offers the simplicity of a web tool with the privacy of local software — capturing everything at HD quality, right in the browser, for free, with no account required.
+                OBS Studio is the gold standard for professional streaming and recording, but requires installation, a learning curve, and system resources. Loom offers polished cloud recording but uploads your videos to their servers and charges for advanced features. RecordPilot offers the simplicity of a web tool with the privacy of local software — capturing everything at HD quality, right in the browser, for free, with no account required.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">How to Record Your Screen Without Downloading Software</h3>
               <p>
-                Recording your screen without downloading software is now possible through modern browser APIs. Open ScreenCraft at screencraft.io (or this URL), select your recording mode, click "Start Recording," and grant the browser permission to access your screen. The browser's native permission dialog will appear, letting you choose what to share — your entire screen, a specific window, or just a browser tab. Once you click Share, recording begins immediately. When you're done, click Stop, review your recording, trim if needed, and download it directly to your device.
+                Recording your screen without downloading software is now possible through modern browser APIs. Open RecordPilot at RecordPilot.io (or this URL), select your recording mode, click "Start Recording," and grant the browser permission to access your screen. The browser's native permission dialog will appear, letting you choose what to share — your entire screen, a specific window, or just a browser tab. Once you click Share, recording begins immediately. When you're done, click Stop, review your recording, trim if needed, and download it directly to your device.
               </p>
               <h3 className="text-xl font-semibold text-white mt-8">Browser Compatibility for Screen Recording</h3>
               <p>
-                Chrome and Edge (Chromium-based) browsers offer the most complete screen recording API support, including system audio capture on Windows and Chrome OS. Firefox supports screen and webcam recording but has limitations on system audio. Safari on macOS supports basic screen capture but lacks some advanced features. For the best experience with ScreenCraft's full feature set including system audio, we recommend Google Chrome or Microsoft Edge on a desktop computer.
+                Chrome and Edge (Chromium-based) browsers offer the most complete screen recording API support, including system audio capture on Windows and Chrome OS. Firefox supports screen and webcam recording but has limitations on system audio. Safari on macOS supports basic screen capture but lacks some advanced features. For the best experience with RecordPilot's full feature set including system audio, we recommend Google Chrome or Microsoft Edge on a desktop computer.
               </p>
             </div>
           </div>

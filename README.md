@@ -1,4 +1,4 @@
-# Elite Screen Recorder (ScreenCraft)
+# Elite Screen Recorder (RecordPilot)
 
 Free online screen recorder — React + Vite + TailwindCSS v4 + shadcn/ui
 

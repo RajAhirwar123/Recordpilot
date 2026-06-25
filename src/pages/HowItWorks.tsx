@@ -9,15 +9,15 @@ const steps = [
     n: '01',
     icon: Monitor,
     title: 'Choose Your Recording Mode',
-    desc: 'ScreenCraft offers 8 recording modes to match every use case. Choose "Entire Screen" to capture your whole display, "Browser Tab" for a single tab, "Webcam Only" for camera-only content, or "Screen + Webcam + Audio" for a full professional recording. Each mode is optimized for its specific use case.',
+    desc: 'RecordPilot offers 8 recording modes to match every use case. Choose "Entire Screen" to capture your whole display, "Browser Tab" for a single tab, "Webcam Only" for camera-only content, or "Screen + Webcam + Audio" for a full professional recording. Each mode is optimized for its specific use case.',
     tip: 'For tutorial videos, "Screen + Audio" gives the best result. For presentations, "Entire Screen" ensures your audience sees everything.',
   },
   {
     n: '02',
     icon: Shield,
     title: 'Allow Browser Permissions',
-    desc: "When you click Start Recording, your browser will display a permission prompt. For screen recording, you'll choose what to share — your entire display, a window, or a browser tab. For microphone recording, grant audio access. These permissions are standard browser security — ScreenCraft never stores or transmits this access.",
-    tip: 'Permissions are requested fresh each recording session. ScreenCraft never stores persistent device access.',
+    desc: "When you click Start Recording, your browser will display a permission prompt. For screen recording, you'll choose what to share — your entire display, a window, or a browser tab. For microphone recording, grant audio access. These permissions are standard browser security — RecordPilot never stores or transmits this access.",
+    tip: 'Permissions are requested fresh each recording session. RecordPilot never stores persistent device access.',
   },
   {
     n: '03',
@@ -30,7 +30,7 @@ const steps = [
     n: '04',
     icon: Video,
     title: 'Record Your Screen & Audio',
-    desc: 'ScreenCraft captures everything in real time using the MediaRecorder API, encoding your video to WebM format as you record. The audio visualizer shows a live waveform of your microphone input. You can pause and resume at any point without losing your recording — paused segments are seamlessly stitched together.',
+    desc: 'RecordPilot captures everything in real time using the MediaRecorder API, encoding your video to WebM format as you record. The audio visualizer shows a live waveform of your microphone input. You can pause and resume at any point without losing your recording — paused segments are seamlessly stitched together.',
     tip: 'The audio visualizer helps you confirm your microphone is active. If the bars don\'t move, check your microphone selection.',
   },
 ];
@@ -40,7 +40,7 @@ const stepsTwo = [
     n: '05',
     icon: Square,
     title: 'Stop Your Recording',
-    desc: 'Click the Stop button when you\'re done. ScreenCraft finalizes the video file from the collected data chunks and generates a preview immediately. For screen recordings, stopping the browser\'s screen share dialog also stops recording automatically.',
+    desc: 'Click the Stop button when you\'re done. RecordPilot finalizes the video file from the collected data chunks and generates a preview immediately. For screen recordings, stopping the browser\'s screen share dialog also stops recording automatically.',
     tip: 'If your browser tab shows the screen share notification bar, you can also click "Stop sharing" there.',
   },
   {
@@ -85,7 +85,7 @@ export default function HowItWorks() {
     <Layout>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-14">
-          <h1 className="text-4xl font-bold text-white">How ScreenCraft Works</h1>
+          <h1 className="text-4xl font-bold text-white">How RecordPilot Works</h1>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
             From opening the app to downloading your recording in 7 simple steps.
           </p>

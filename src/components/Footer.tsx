@@ -11,7 +11,7 @@ export function Footer() {
               <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary">
                 <Circle className="w-3 h-3 fill-white text-white" />
               </div>
-              <span className="text-lg font-bold text-white">ScreenCraft</span>
+              <span className="text-lg font-bold text-white">RecordPilot</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Free, private browser-based screen recording. No uploads, no accounts, no limits.
@@ -76,7 +76,7 @@ export function Footer() {
 
         <div className="mt-10 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ScreenCraft. All rights reserved.
+            © {new Date().getFullYear()} RecordPilot. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
             100% browser-based · No server uploads · GDPR & CCPA friendly

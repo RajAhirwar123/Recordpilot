@@ -143,7 +143,7 @@ export default function VideoEditor() {
       if (!blob) return;
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `screencraft-snapshot-${Math.floor(v.currentTime)}s.png`;
+      a.download = `RecordPilot-snapshot-${Math.floor(v.currentTime)}s.png`;
       a.click();
     }, 'image/png');
   };
@@ -153,7 +153,7 @@ export default function VideoEditor() {
     const ext = blob.type.includes('mp4') ? 'mp4' : 'webm';
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `screencraft-edited.${ext}`;
+    a.download = `RecordPilot-edited.${ext}`;
     a.click();
   };
 

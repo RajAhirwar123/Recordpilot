@@ -13,20 +13,20 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By accessing and using ScreenCraft ("the Service"), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service. ScreenCraft reserves the right to modify these terms at any time, with changes effective upon posting to this page.
+              By accessing and using RecordPilot ("the Service"), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service. RecordPilot reserves the right to modify these terms at any time, with changes effective upon posting to this page.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">2. Description of Service</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft is a browser-based screen recording application that enables users to record their screen, webcam, and audio using browser-native APIs. The Service processes all data locally within the user's browser. ScreenCraft does not store, transmit, or process user recordings on any server infrastructure.
+              RecordPilot is a browser-based screen recording application that enables users to record their screen, webcam, and audio using browser-native APIs. The Service processes all data locally within the user's browser. RecordPilot does not store, transmit, or process user recordings on any server infrastructure.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">3. Acceptable Use</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">You agree to use ScreenCraft only for lawful purposes and in accordance with these Terms. You agree NOT to use ScreenCraft to:</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">You agree to use RecordPilot only for lawful purposes and in accordance with these Terms. You agree NOT to use RecordPilot to:</p>
             <ul className="space-y-2 text-muted-foreground text-sm">
               {[
                 'Record any content without the knowledge and consent of all parties being recorded, where required by applicable law',
@@ -48,35 +48,35 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. Recording Consent and Legal Compliance</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You are solely responsible for ensuring you have obtained all necessary consents and comply with all applicable laws before recording any person, screen, audio, or content using ScreenCraft. Recording laws vary significantly by jurisdiction. In many jurisdictions, recording telephone calls or conversations without consent is illegal. ScreenCraft assumes no liability for illegal recordings made using the Service.
+              You are solely responsible for ensuring you have obtained all necessary consents and comply with all applicable laws before recording any person, screen, audio, or content using RecordPilot. Recording laws vary significantly by jurisdiction. In many jurisdictions, recording telephone calls or conversations without consent is illegal. RecordPilot assumes no liability for illegal recordings made using the Service.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">5. Intellectual Property</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You retain full ownership of all content you record using ScreenCraft. ScreenCraft makes no claim over recordings you create. The ScreenCraft application itself, including its code, design, trademarks, and content, is owned by ScreenCraft and protected by intellectual property law. You may not reproduce, distribute, or create derivative works from the ScreenCraft application without written permission.
+              You retain full ownership of all content you record using RecordPilot. RecordPilot makes no claim over recordings you create. The RecordPilot application itself, including its code, design, trademarks, and content, is owned by RecordPilot and protected by intellectual property law. You may not reproduce, distribute, or create derivative works from the RecordPilot application without written permission.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">6. Disclaimer of Warranties</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the Service will be uninterrupted, error-free, or free of viruses. Browser API support and recording quality depend on your browser, operating system, and hardware, which are outside our control. We make no warranty regarding recording quality, completeness, or compatibility with any particular system or use case.
+              RecordPilot is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the Service will be uninterrupted, error-free, or free of viruses. Browser API support and recording quality depend on your browser, operating system, and hardware, which are outside our control. We make no warranty regarding recording quality, completeness, or compatibility with any particular system or use case.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">7. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              To the maximum extent permitted by applicable law, ScreenCraft shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of, or inability to use, the Service. This includes but is not limited to loss of recordings, loss of data, or damages arising from recordings made using the Service. Our total liability for any claim related to the Service is limited to the greater of $0 or the amount you paid to use the Service (which is $0, as the Service is free).
+              To the maximum extent permitted by applicable law, RecordPilot shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of, or inability to use, the Service. This includes but is not limited to loss of recordings, loss of data, or damages arising from recordings made using the Service. Our total liability for any claim related to the Service is limited to the greater of $0 or the amount you paid to use the Service (which is $0, as the Service is free).
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">8. Indemnification</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You agree to indemnify and hold harmless ScreenCraft and its operators from any claims, damages, losses, and expenses (including legal fees) arising from your use of the Service, your violation of these Terms, your violation of any third-party rights, or any content you record using the Service.
+              You agree to indemnify and hold harmless RecordPilot and its operators from any claims, damages, losses, and expenses (including legal fees) arising from your use of the Service, your violation of these Terms, your violation of any third-party rights, or any content you record using the Service.
             </p>
           </section>
 

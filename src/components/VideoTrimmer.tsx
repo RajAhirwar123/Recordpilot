@@ -174,7 +174,7 @@
 //         const url = URL.createObjectURL(trimmedBlob);
 //         const a = document.createElement('a');
 //         a.href = url;
-//         a.download = `screencraft-trimmed.${ext}`;
+//         a.download = `RecordPilot-trimmed.${ext}`;
 //         a.click();
 //         setTimeout(() => URL.revokeObjectURL(url), 2000);
 //       }
@@ -517,7 +517,7 @@ export function VideoTrimmer({ videoUrl, blob, onDownload }: VideoTrimmerProps) 
         const url = URL.createObjectURL(trimmedBlob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `screencraft-trimmed.${ext}`;
+        a.download = `RecordPilot-trimmed.${ext}`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

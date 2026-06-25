@@ -19,14 +19,14 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">1. General Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              The information and services provided by ScreenCraft ("the Service") are offered on an "as is" and "as available" basis. ScreenCraft makes no representations or warranties of any kind, express or implied, regarding the operation of the Service, the accuracy of any information provided through the Service, or the results that may be obtained from the use of the Service. Your use of the Service is entirely at your own risk.
+              The information and services provided by RecordPilot ("the Service") are offered on an "as is" and "as available" basis. RecordPilot makes no representations or warranties of any kind, express or implied, regarding the operation of the Service, the accuracy of any information provided through the Service, or the results that may be obtained from the use of the Service. Your use of the Service is entirely at your own risk.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">2. Recording Quality & Compatibility</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              ScreenCraft relies on browser-native APIs including <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">getDisplayMedia</code>, <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">getUserMedia</code>, and <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">MediaRecorder</code>. The availability, behavior, and quality of these APIs vary by browser, operating system, hardware, and browser version. ScreenCraft does not guarantee:
+              RecordPilot relies on browser-native APIs including <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">getDisplayMedia</code>, <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">getUserMedia</code>, and <code className="text-primary text-xs bg-primary/10 px-1 py-0.5 rounded">MediaRecorder</code>. The availability, behavior, and quality of these APIs vary by browser, operating system, hardware, and browser version. RecordPilot does not guarantee:
             </p>
             <ul className="space-y-2 text-muted-foreground text-sm">
               {[
@@ -47,7 +47,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">3. User Responsibility for Recordings</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You are solely and entirely responsible for all content you record using ScreenCraft. This includes ensuring you have obtained the necessary legal permissions and consents from all parties whose likeness, voice, screen content, or intellectual property appears in your recordings. ScreenCraft accepts no liability for recordings that:
+              You are solely and entirely responsible for all content you record using RecordPilot. This includes ensuring you have obtained the necessary legal permissions and consents from all parties whose likeness, voice, screen content, or intellectual property appears in your recordings. RecordPilot accepts no liability for recordings that:
             </p>
             <ul className="space-y-2 text-muted-foreground text-sm mt-3">
               {[
@@ -68,49 +68,49 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. No Professional Advice</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Nothing on ScreenCraft constitutes legal, medical, financial, or professional advice of any kind. If you are uncertain about the legality of recording specific content or people in your jurisdiction, you should consult a qualified legal professional before using ScreenCraft for that purpose.
+              Nothing on RecordPilot constitutes legal, medical, financial, or professional advice of any kind. If you are uncertain about the legality of recording specific content or people in your jurisdiction, you should consult a qualified legal professional before using RecordPilot for that purpose.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">5. Third-Party Content</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft may contain links to third-party websites or resources. These links are provided for convenience only. ScreenCraft does not endorse, control, or take responsibility for the content, products, or services offered by any third-party site. Accessing third-party links is done at your own discretion and risk.
+              RecordPilot may contain links to third-party websites or resources. These links are provided for convenience only. RecordPilot does not endorse, control, or take responsibility for the content, products, or services offered by any third-party site. Accessing third-party links is done at your own discretion and risk.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">6. Data Loss Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              All recordings are stored temporarily in your browser's memory during the recording session. ScreenCraft does not back up or cloud-store any recordings. Recordings will be permanently lost if you close the browser tab, refresh the page, or navigate away before downloading. ScreenCraft accepts no liability for recordings lost due to browser crashes, power failures, accidental tab closure, or any other interruption to the recording session.
+              All recordings are stored temporarily in your browser's memory during the recording session. RecordPilot does not back up or cloud-store any recordings. Recordings will be permanently lost if you close the browser tab, refresh the page, or navigate away before downloading. RecordPilot accepts no liability for recordings lost due to browser crashes, power failures, accidental tab closure, or any other interruption to the recording session.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">7. Browser & Platform Limitations</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft is a web-based application dependent on modern browser capabilities. Features that work in one browser may not work in another. ScreenCraft does not control browser updates, and a browser update may affect the functionality of ScreenCraft without prior notice. We recommend using the latest version of Google Chrome or Microsoft Edge for the best experience.
+              RecordPilot is a web-based application dependent on modern browser capabilities. Features that work in one browser may not work in another. RecordPilot does not control browser updates, and a browser update may affect the functionality of RecordPilot without prior notice. We recommend using the latest version of Google Chrome or Microsoft Edge for the best experience.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">8. Service Availability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft makes no guarantee of continuous, uninterrupted service availability. The Service may be temporarily unavailable due to maintenance, technical issues, infrastructure outages, or other factors outside our control. We are not liable for any loss or inconvenience caused by service downtime or unavailability.
+              RecordPilot makes no guarantee of continuous, uninterrupted service availability. The Service may be temporarily unavailable due to maintenance, technical issues, infrastructure outages, or other factors outside our control. We are not liable for any loss or inconvenience caused by service downtime or unavailability.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">9. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              To the fullest extent permitted by applicable law, ScreenCraft and its operators shall not be liable for any direct, indirect, incidental, special, consequential, punitive, or exemplary damages arising out of or in any way connected with your use of the Service or with the inability to use the Service, even if ScreenCraft has been advised of the possibility of such damages.
+              To the fullest extent permitted by applicable law, RecordPilot and its operators shall not be liable for any direct, indirect, incidental, special, consequential, punitive, or exemplary damages arising out of or in any way connected with your use of the Service or with the inability to use the Service, even if RecordPilot has been advised of the possibility of such damages.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">10. Changes to This Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              ScreenCraft reserves the right to modify this disclaimer at any time without prior notice. Changes take effect immediately upon posting to this page. By continuing to use ScreenCraft after changes are posted, you accept the updated disclaimer.
+              RecordPilot reserves the right to modify this disclaimer at any time without prior notice. Changes take effect immediately upon posting to this page. By continuing to use RecordPilot after changes are posted, you accept the updated disclaimer.
             </p>
           </section>
 

@@ -25,7 +25,7 @@ export function Header() {
             <div className="relative flex items-center justify-center w-8 h-8 rounded-full bg-primary">
               <Circle className="w-3 h-3 fill-white text-white" />
             </div>
-            <span className="text-lg font-bold text-white tracking-tight">ScreenCraft</span>
+            <span className="text-lg font-bold text-white tracking-tight">RecordPilot</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

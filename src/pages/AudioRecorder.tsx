@@ -168,7 +168,7 @@ export default function AudioRecorder() {
                   <Button
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-white h-12 px-6"
-                    onClick={() => downloadRecording('screencraft-audio')}
+                    onClick={() => downloadRecording('RecordPilot-audio')}
                     data-testid="button-audio-download"
                   >
                     <Download className="w-5 h-5 mr-2" />
@@ -201,7 +201,7 @@ export default function AudioRecorder() {
               <VideoPlayer
                 src={videoUrl}
                 isAudio
-                onDownload={() => downloadRecording('screencraft-audio')}
+                onDownload={() => downloadRecording('RecordPilot-audio')}
                 onReplace={handleDiscard}
               />
             </motion.div>
