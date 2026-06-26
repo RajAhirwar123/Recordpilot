@@ -20,7 +20,12 @@ const pages = [
 ];
 
 pages.forEach((url) => {
-  sitemap.write({ url });
+  sitemap.write({
+    url,
+    lastmod: new Date().toISOString(),
+    changefreq: "weekly",
+    priority: url === "/" ? 1.0 : 0.8,
+  });
 });
 
 sitemap.end();
