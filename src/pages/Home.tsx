@@ -173,7 +173,7 @@ export default function Home() {
                         playsInline
                         className="w-full h-full object-cover"
                       >
-                        <source src="/public/video1.mp4" type="video/mp4" />
+                        {/* <source src="public/video1.mp4" type="video1/mp4" /> */}
                       </video>
 
                       {/* Webcam Preview */}
