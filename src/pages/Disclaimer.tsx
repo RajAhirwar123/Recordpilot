@@ -1,9 +1,15 @@
 import { AlertTriangle } from 'lucide-react';
 import { Layout } from '@/components/Layout';
+import SEO from '@/components/SEO';
 
 export default function Disclaimer() {
   return (
     <Layout>
+      <SEO
+        title="Disclaimer | RecordPilot"
+        description="RecordPilot disclaimer."
+        canonical="/disclaimer"
+        />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex items-start gap-4 mb-10">
           <div className="w-12 h-12 rounded-full bg-warning/10 border border-warning/20 flex items-center justify-center flex-shrink-0 mt-1">

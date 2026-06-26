@@ -1,9 +1,15 @@
 import { Shield, Lock, Eye, Server } from 'lucide-react';
 import { Layout } from '@/components/Layout';
+import SEO from '@/components/SEO';
 
 export default function Privacy() {
   return (
     <Layout>
+      <SEO
+        title="Privacy Policy | RecordPilot"
+        description="Read the RecordPilot privacy policy."
+        canonical="/privacy"
+        />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-white">Privacy Policy</h1>

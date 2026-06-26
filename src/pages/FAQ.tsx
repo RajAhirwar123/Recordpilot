@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { ContentAd } from '@/components/AdUnit';
+import SEO from '@/components/SEO';
 
 const faqs = [
   {
@@ -57,6 +58,33 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function FAQ() {
   return (
     <Layout>
+      <SEO
+        title="FAQ | RecordPilot"
+        description="Frequently asked questions about RecordPilot."
+        canonical="/faq"
+        schema={{
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+        {
+        "@type":"Question",
+        "name":"Is RecordPilot free?",
+        "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. RecordPilot is completely free."
+        }
+        },
+        {
+        "@type":"Question",
+        "name":"Are recordings uploaded?",
+        "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"No. Everything stays inside your browser."
+        }
+        }
+        ]
+        }}
+        />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white">Frequently Asked Questions</h1>

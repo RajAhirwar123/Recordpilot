@@ -7,6 +7,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/Layout';
 import { VideoTrimmer } from '@/components/VideoTrimmer';
+import SEO from '@/components/SEO';
 
 /* ── helpers ─────────────────────────────────────────────────────────────── */
 function formatFileSize(bytes: number) {
@@ -172,6 +173,12 @@ export default function VideoEditor() {
 
   return (
     <Layout>
+      <SEO
+        title="Online Video Editor | RecordPilot"
+        description="Trim and edit videos online for free."
+        canonical="/video-editor"
+        keywords="video editor, trim video online"
+        />
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
 
         {/* Header */}

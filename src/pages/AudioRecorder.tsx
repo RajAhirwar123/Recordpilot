@@ -7,6 +7,7 @@ import { AudioVisualizer } from '@/components/AudioVisualizer';
 import { VideoPlayer } from '@/components/VideoPlayer';
 import { useRecording } from '@/hooks/useRecording';
 import { useTimer } from '@/hooks/useTimer';
+import SEO from "@/components/SEO";
 
 export default function AudioRecorder() {
   const [activeStream, setActiveStream] = useState<MediaStream | null>(null);
@@ -53,6 +54,12 @@ export default function AudioRecorder() {
 
   return (
     <Layout>
+      <SEO
+        title="Online Audio Recorder | RecordPilot"
+        description="Record microphone audio directly from your browser."
+        canonical="/audio-recorder"
+        keywords="audio recorder, microphone recorder, voice recorder"
+        />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white">Audio Recorder</h1>

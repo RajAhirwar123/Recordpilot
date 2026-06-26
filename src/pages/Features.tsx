@@ -2,6 +2,7 @@ import { Monitor, Mic, Video, Globe, Eye, Scissors, Infinity, Shield, Lock, Zap,
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/Layout';
+import SEO from '@/components/SEO';
 
 const features = [
   { icon: Monitor, title: 'Screen Recording', desc: 'Capture your full display, a specific app window, or a browser tab at up to 1080p HD. The getDisplayMedia API ensures native-quality capture with no performance impact on most systems.' },
@@ -36,6 +37,11 @@ const cols = ['RecordPilot', 'Screen-Recorder.com', 'OBS Studio', 'Loom'];
 export default function Features() {
   return (
     <Layout>
+      <SEO
+          title="Features | RecordPilot"
+          description="Explore all RecordPilot features."
+          canonical="/features"
+          />
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-white">Features</h1>

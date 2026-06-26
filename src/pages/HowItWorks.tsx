@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/Layout';
 import { ContentAd } from '@/components/AdUnit';
+import SEO from '@/components/SEO';
 
 const steps = [
   {
@@ -83,6 +84,11 @@ function StepCard({ n, icon: Icon, title, desc, tip }: typeof steps[0]) {
 export default function HowItWorks() {
   return (
     <Layout>
+      <SEO
+        title="How RecordPilot Works"
+        description="Learn how to use RecordPilot step by step."
+        canonical="/how-it-works"
+        />
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-white">How RecordPilot Works</h1>

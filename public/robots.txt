@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://recordpilot.vercel.app/sitemap.xml

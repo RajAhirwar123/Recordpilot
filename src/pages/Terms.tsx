@@ -1,8 +1,14 @@
 import { Layout } from '@/components/Layout';
+import SEO from '@/components/SEO';
 
 export default function Terms() {
   return (
     <Layout>
+      <SEO
+        title="Terms & Conditions | RecordPilot"
+        description="Terms and conditions of RecordPilot."
+        canonical="/terms"
+        />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-white">Terms of Service</h1>

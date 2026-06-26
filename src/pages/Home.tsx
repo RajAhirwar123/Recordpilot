@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/Layout';
+import SEO from "@/components/SEO";
 
 const features = [
   { icon: Monitor, title: 'Screen Recording', desc: 'Capture your entire screen, a specific app window, or just a browser tab with crystal-clear quality.' },
@@ -82,6 +83,16 @@ export default function Home() {
 
   return (
     <Layout>
+      <>
+        <SEO
+          title="RecordPilot - Free Online Screen Recorder"
+          description="Free online screen recorder with webcam and audio. No watermark. No login."
+          canonical="/"
+          keywords="screen recorder, online screen recorder, free screen recorder, webcam recorder, audio recorder"
+        />
+
+        {/* baaki page */}
+      </>
       <div className="overflow-x-hidden">
         {/* Hero */}
         <section className="relative py-24 px-4 sm:px-6 lg:px-8">

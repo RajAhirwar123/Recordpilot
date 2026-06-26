@@ -267,7 +267,7 @@ const ADSTERRA_CONFIG: Record<AdSlot, {
   width: number;
   height: number;
 }> = {
-  leaderboard: { key: '614db1d792a2f719b0634c19cece7f5a', width: 728, height: 90  },
+  leaderboard: { key: '', width: 728, height: 90  },
   sidebar:     { key: 'YOUR_SIDEBAR_KEY',     width: 300, height: 600 },
   rectangle:   { key: 'YOUR_RECTANGLE_KEY',   width: 336, height: 280 },
   responsive:  { key: 'YOUR_RESPONSIVE_KEY',  width: 336, height: 280 },

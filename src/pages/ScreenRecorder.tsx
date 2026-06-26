@@ -15,6 +15,7 @@ import { SidebarAd } from '@/components/AdUnit';
 import { useRecording } from '@/hooks/useRecording';
 import { useTimer } from '@/hooks/useTimer';
 import type { RecordingMode, RecordingSettings } from '@/types/recording';
+import SEO from "@/components/SEO";
 
 const modes: { id: RecordingMode; icon: typeof Monitor; label: string; desc: string }[] = [
   { id: 'screen', icon: Monitor, label: 'Entire Screen', desc: 'Full display capture' },
@@ -96,6 +97,12 @@ export default function ScreenRecorder() {
        * Mobile:  full-width, sidebar hidden
        * The sidebar ad is NEVER shown on mobile and NEVER overlaps recorder controls.
        */}
+       <SEO
+          title="Free Screen Recorder | RecordPilot"
+          description="Record your screen online with microphone and webcam."
+          canonical="/screen-recorder"
+          keywords="screen recorder, browser screen recorder, free recorder"
+          />
       <div className="flex gap-6 items-start mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
 
         {/* ── Main recorder content ─────────────────────────────────────── */}

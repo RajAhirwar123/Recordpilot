@@ -161,6 +161,7 @@
   import { Textarea } from '@/components/ui/textarea';
   import { Label } from '@/components/ui/label';
   import { Layout } from '@/components/Layout';
+  import SEO from '@/components/SEO';
 
   const schema = z.object({
     name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -252,6 +253,11 @@
 
   return (
     <Layout>
+      <SEO
+        title="Contact | RecordPilot"
+        description="Contact the RecordPilot team."
+        canonical="/contact"
+        />
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-10">
           <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
