@@ -35,71 +35,66 @@
       ></script>
       ══════════════════════════════════════════════════════════════
     -->
-       <!-- WebSite Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "RecordPilot",
-      "url": "https://recordpilot.vercel.app/"
-    }
-    </script>
+   <!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RecordPilot",
+  "url": "https://recordpilot.vercel.app/"
+}
+</script>
 
-    <!-- SoftwareApplication Schema — star rating Google mein -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "RecordPilot Screen Recorder",
-      "url": "https://recordpilot.vercel.app/",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "Chrome, Edge, Firefox",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      <!-- "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      } -->
-    }
-    </script>
+<!-- SoftwareApplication Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RecordPilot Screen Recorder",
+  "url": "https://recordpilot.vercel.app/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Chrome, Edge, Firefox",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 
-    <!-- FAQ Schema — Google mein FAQ directly dikhega -->
-    <script type="application/ld+json">
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is my recording uploaded to your servers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. RecordPilot is 100% client-side. Never uploaded to any server."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is RecordPilot completely free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, completely free with no hidden charges."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a recording time limit?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No time limits on recordings."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "Is my recording uploaded to your servers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. RecordPilot is 100% client-side. Never uploaded to any server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is RecordPilot completely free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely free with no hidden charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a recording time limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No time limits on recordings."
+      }
     }
-    </script>
+  ]
+}
+</script>
   </head>
   <body>
     <div id="root"></div>
